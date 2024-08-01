@@ -1,0 +1,54 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  background-color: var(--mantine-color-body);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.transparent {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: 10px 16px;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  font-size: 20px;
+  font-weight: 500;
+  .hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-0),
+      var(--mantine-color-dark-6)
+    );
+  }
+
+  [data-mantine-color-scheme] &[data-active] {
+    background-color: var(--mantine-color-red-7);
+    color: var(--mantine-color-white);
+  }
+}
+
+.link:hover {
+  background-color: light-dark(
+    var(--mantine-color-gray-1),
+    var(--mantine-color-dark-3)
+  );
+}
+
+.logo {
+  height: 50px;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.05);
+}
