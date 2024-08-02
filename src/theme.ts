@@ -48,18 +48,7 @@ const themeOverride = createTheme({
         to: 'red',
         deg: 45,
     },
-    headings: {
-        sizes: {
-            h1: {
-                fontWeight: '100',
-                fontSize: rem(36),
-                lineHeight: '1.4',
-                
-            },
-        },
-    },
     other: {
-        primaryHeadingSize: 45,
         fontWeights: {
             bold: 700,
             extraBold: 900,

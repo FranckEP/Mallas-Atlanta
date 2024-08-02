@@ -1,13 +1,13 @@
 import { Carousel } from "@mantine/carousel";
 import { useMediaQuery } from "@mantine/hooks";
-import { useMantineTheme, Paper, Title } from "@mantine/core";
+import { useMantineTheme, Paper} from "@mantine/core";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 import Logo from "../../assets/Logos/logo.svg";
 import Image1 from "../../assets/Carousel Images/1.png";
 import Image2 from "../../assets/Carousel Images/2.png";
 import Image3 from "../../assets/Carousel Images/3.png";
-import './CarouselHome.css'
+import classes from './CarouselHome.module.css'
 
 const data = [
   {
@@ -33,11 +33,11 @@ interface CardProps {
 function Card({ image, text, icon }: CardProps) {
   return (
     <Paper
-      className="cardCarousel"
+      className={classes.cardCarousel}
       style={{ backgroundImage: `url(${image})` }}
     >
-      <Title className="cardTitle">{text}</Title>
-      <img src={icon} alt="icon" className="cardIcon" />
+      <div className={classes.cardTitle}>{text}</div>
+      <img src={icon} alt="icon" className={classes.cardIcon} />
     </Paper>
   );
 }
