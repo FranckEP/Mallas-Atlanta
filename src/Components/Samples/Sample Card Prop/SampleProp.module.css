@@ -1,0 +1,59 @@
+.sampleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sampleTitle {
+    font-size: xx-large;
+    font-weight: bold;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--mantine-color-red-8);
+    margin-top: 20px;
+  }
+  
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px;
+  }
+  
+  .imageBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .sampleButton {
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .sampleButton:hover {
+    background-color: var(--mantine-color-red-8);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .sampleTitle {
+      font-size: x-large;
+    }
+  }
+  
+  @media (max-width: 480px) {  
+    .sampleTitle {
+      font-size: larger;
+    }
+  }
+  

@@ -64,7 +64,6 @@ const Header = () => {
           onClick={toggle}
         />
         <Drawer
-          transitionProps={{ transition: 'fade', duration: 600, timingFunction: 'linear' }}
           offset={8}
           radius={8}
           position="right"

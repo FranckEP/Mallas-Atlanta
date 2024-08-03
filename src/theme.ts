@@ -3,7 +3,6 @@ import {
     createTheme,
     DEFAULT_THEME,
     mergeMantineTheme,
-    rem
 } from '@mantine/core';
 
 const themeOverride = createTheme({
@@ -39,7 +38,6 @@ const themeOverride = createTheme({
             '#FF4343'
         ]
     },
-    autoContrast: true,
     fontFamily: 'Lora',
     defaultRadius: 'md',
     cursorType: 'pointer',
@@ -47,26 +45,6 @@ const themeOverride = createTheme({
         from: 'blue',
         to: 'red',
         deg: 45,
-    },
-    other: {
-        fontWeights: {
-            bold: 700,
-            extraBold: 900,
-        },
-    },
-    fontSizes: {
-        xs: rem(10),
-        sm: rem(11),
-        md: rem(14),
-        lg: rem(16),
-        xl: rem(20),
-    },
-    lineHeights: {
-        xs: '1.4',
-        sm: '1.45',
-        md: '1.55',
-        lg: '1.6',
-        xl: '1.65',
     },
     components: {
         Button: Button.extend({

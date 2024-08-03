@@ -1,0 +1,69 @@
+.containerInformation {
+  background-color: #f0f4ff;
+  padding: 10px;
+}
+.counterValue {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--mantine-color-red-8);
+  margin: 0;
+  filter: drop-shadow(0 0 1em #f89494);
+  font-style: italic;
+  transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.counterLabel {
+  margin-top: -20px;
+  font-size: xx-large;
+  color: var(--mantine-color-blue-8);
+  font-weight: 700;
+  transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.counter {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  background: url('../../assets/bgcounter.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.counter:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+  .counterValue {
+    font-size: 2.5rem;
+  }
+
+  .counterLabel {
+    font-size: x-large;
+    margin-top: -15px;
+  }
+
+  .counter {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .counterValue {
+    font-size: 2rem;
+  }
+
+  .counterLabel {
+    font-size: larger;
+    margin-top: -10px;
+  }
+
+  .counter {
+    padding: 10px;
+  }
+}
