@@ -1,4 +1,4 @@
-import { Image, Text } from "@mantine/core";
+import { Image} from "@mantine/core";
 import asesoria from "../../assets/Icons Special/asesoria-personalizada.png";
 import guarantee from "../../assets/Icons Special/guarantee.png";
 import innovation from "../../assets/Icons Special/innovation.png";
@@ -32,14 +32,14 @@ function Card({ image, text }: CardProps) {
   return (
     <div className={classes.cardContainer}>
       <Image src={image} alt={text} className={classes.imageIcon} />
-      <Text className={classes.cardText}>{text}</Text>
+      <div className={classes.cardText}>{text}</div>
     </div>
   );
 }
 const Special = () => {
   return (
     <div className={classes.mainContainer}>
-      <Text className={classes.textTitle}>¿Qué nos hace especial?</Text>
+      <div className={classes.textTitle}>¿Qué nos hace especial?</div>
       <div className={classes.flexContainer}>
         {data.map((item, index) => (
           <Card key={index} {...item} />

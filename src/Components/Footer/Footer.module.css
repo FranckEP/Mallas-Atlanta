@@ -1,10 +1,9 @@
 .footer {
-  margin-top: rem(120px);
   border-top: rem(1px) solid
     light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
-    background-image: url('../../assets/footerbg2.svg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("../../assets/footerbg2.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .inner {
@@ -50,5 +49,4 @@
   align-items: center;
   color: var(--mantine-color-blue-5);
   text-align: center;
-  
 }

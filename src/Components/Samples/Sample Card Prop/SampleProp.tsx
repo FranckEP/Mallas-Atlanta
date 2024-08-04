@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Image, Button } from "@mantine/core";
 import classes from "./SampleProp.module.css";
 import { useNavigate } from "react-router-dom";
+import logo from '../../../assets/Logos/logo.svg'
 
 interface SamplePropProps {
   images: { src: string; alt: string }[];
@@ -18,8 +19,9 @@ const SampleProp: React.FC<SamplePropProps> = ({ images, title, navigationRef, b
       <div className={classes.sampleTitle}>{title}</div>
       <div className={classes.imageGrid}>
         {images.slice(0, 3).map((image, index) => (
-          <Box key={index} className="image-box">
-            <Image src={image.src} alt={image.alt} width="100%" height="100%" fit="cover" className="image"/>
+          <Box key={index} className={classes.imageBox}>
+            <Image src={image.src} alt={`Gallery Image ${index + 1}`} className={classes.image} />
+            <img src={logo} alt="Logo" className={classes.logoIcon} />
           </Box>
         ))}
       </div>

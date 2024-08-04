@@ -1,7 +1,13 @@
+import Gallery from "../../Components/Gallery/Gallery";
+import TitleProp from "../../Components/Title/TitleProp";
+
 const GalleryPage = () => {
   return (
-    <div>GalleryPage</div>
+    <div>
+      <TitleProp text='Galería'/>
+      <Gallery/>
+    </div>
   )
 }
 
-export default GalleryPage
+export default GalleryPage;

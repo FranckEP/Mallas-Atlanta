@@ -1,16 +1,21 @@
 .mainContainer {
   margin-top: 20px;
 }
+
 .flexContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 10px;
+  max-width: 100%;
 }
 
-.cardContainer:hover{
+.cardContainer:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
+
 .cardContainer {
   text-align: center;
   height: auto;
@@ -21,6 +26,7 @@
 .imageIcon {
   margin: 0 auto;
   display: block;
+  transition: padding 0.3s ease-in-out;
 }
 
 .textTitle {
@@ -36,7 +42,7 @@
   margin-top: 10px;
   font-size: xx-large;
   color: var(--mantine-color-blue-8);
-  transition: color 0.3s ease;
+  transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -47,6 +53,7 @@
   .textTitle {
     font-size: x-large;
   }
+
   .cardContainer {
     width: 160px;
   }

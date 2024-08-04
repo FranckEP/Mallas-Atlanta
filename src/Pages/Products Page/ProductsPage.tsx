@@ -1,7 +1,10 @@
+import TitleProp from "../../Components/Title/TitleProp";
 const ProductsPage = () => {
   return (
-    <div>ProductsPage</div>
-  )
-}
+    <div>
+      <TitleProp text='Productos'/>
+    </div>
+  );
+};
 
-export default ProductsPage
+export default ProductsPage;
