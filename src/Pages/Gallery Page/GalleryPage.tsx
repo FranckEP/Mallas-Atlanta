@@ -1,11 +1,11 @@
-import Gallery from "../../Components/Gallery/Gallery";
+import GalleryContent from "../../Components/Gallery/Gallery";
 import TitleProp from "../../Components/Title/TitleProp";
 
 const GalleryPage = () => {
   return (
     <div>
       <TitleProp text='Galería'/>
-      <Gallery/>
+      <GalleryContent/>
     </div>
   )
 }

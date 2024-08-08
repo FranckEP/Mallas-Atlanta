@@ -1,45 +1,44 @@
-import "./Gallery.css";
-import logo from '../../assets/Logos/logo.svg'
-import image1 from '../../assets/Carousel Images/1.png'
+import image1 from "../../assets/Carousel Images/1.png";
+import CarouselProp from "./Carousel Prop/CarouselProp";
 
-const images = [
+const data = [
   {
-    image: image1
+    image: image1,
   },
   {
-    image: 'https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg'
+    image:
+      "https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg",
   },
   {
-    image: 'https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg'
+    image:
+      "https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg",
   },
   {
-    image: 'https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg'
+    image:
+      "https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg",
   },
   {
-    image: 'https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg'
+    image:
+      "https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg",
   },
   {
-    image: 'https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg'
+    image:
+      "https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg",
   },
   {
-    image: 'https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg'
-  }
+    image:
+      "https://png.pngtree.com/background/20230524/original/pngtree-sad-pictures-for-desktop-hd-backgrounds-picture-image_2705986.jpg",
+  },
 ];
 
-const Gallery = () => {
+const GalleryContent = () => {
   return (
     <div>
-      
-      <div className="gallery-container">
-          {images.map((image, index) => (
-            <div className="gallery-item" key={index}>
-              <img src={image.image} alt={`Gallery Image ${index + 1}`} className="gallery-image" />
-              <img src={logo} alt="Logo" className="logo-icon" />
-            </div>
-          ))}
-      </div>
+      <CarouselProp sectionTitle="Ventanas" images={data} />
+      <CarouselProp sectionTitle="Ventanales" images={data} />
+      <CarouselProp sectionTitle="Balcones" images={data} />
     </div>
-  )
-}
+  );
+};
 
-export default Gallery;
+export default GalleryContent;

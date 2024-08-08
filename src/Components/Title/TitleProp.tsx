@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from "./Title.module.css";
-import bg from "../../assets/bgprodgall.png"
+import bg from "../../assets/Backgrounds/bgprodgall.png"
 
 interface TitlePropProps {
   text: string;

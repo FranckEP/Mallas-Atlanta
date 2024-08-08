@@ -1,7 +1,7 @@
 .footer {
   border-top: rem(1px) solid
     light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
-  background-image: url("../../assets/footerbg2.svg");
+  background-image: url("../../assets/Backgrounds/footerbg2.svg");
   background-size: cover;
   background-position: center;
 }

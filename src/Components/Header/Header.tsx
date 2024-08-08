@@ -3,7 +3,7 @@ import { Group, Burger, Image, Drawer} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Logo from "../../assets/Logos/logo.svg";
 import classes from "./Header.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const links = [
   { link: "/nosotros", label: "Nosotros" },
@@ -17,10 +17,13 @@ const Header = () => {
   const [active, setActive] = useState(links[0].link);
   const [opened, { toggle }] = useDisclosure();
   const [isScrolled, setIsScrolled] = useState(false);
+  
+  const actualPath = useLocation();
+
+  console.log(actualPath.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(window.scrollY);
       if (window.scrollY > 0) {
         setIsScrolled(true);
       } else {

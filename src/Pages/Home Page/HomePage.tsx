@@ -1,7 +1,7 @@
 import CarouselHomePage from "../../Components/Carousel/CarouselHome"
 import Information from "../../Components/Information/Information"
 import GallerySample from "../../Components/Samples/GallerySample"
-import ProductsSample from "../../Components/Samples/ProductsSample"
+import ProductsSample from "../../Components/Products/ProductsSample"
 import Special from "../../Components/Special/Special"
 
 const HomePage = () => {
